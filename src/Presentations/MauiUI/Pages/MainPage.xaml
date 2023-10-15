@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiUI.Pages.MainPage"
+             Title="Startup">
+
+    <Grid Padding="15, 70, 15, 15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <StackLayout Orientation="Vertical" Spacing="35" VerticalOptions="FillAndExpand">
+            <Image Source="logo.png" WidthRequest="80" />
+            <StackLayout Spacing="15" Orientation="Vertical" HorizontalOptions="Center">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Label Text="TECHONIT"
+                   FontAttributes="Bold" FontSize="30" FontFamily="BarlowExtraBold"
+                   HorizontalTextAlignment="Center" />
+                </StackLayout>
+                <Label Text="Personalize and automate your space!"
+                   FontSize="20" FontAttributes="Bold"
+                   MaximumWidthRequest="250"
+                   HorizontalTextAlignment="Center"
+                       TextColor="#bbb"/>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout Grid.Row="1">
+            <Button Text="Start"
+                    CornerRadius="20"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    VerticalOptions="End"
+                    Clicked="OnStartBtn"
+                    />
+        </StackLayout>
+    </Grid>
+
+</ContentPage>
